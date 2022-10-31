@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    flex: 0 0 100%;
 }
 
 .header {
@@ -28,8 +29,7 @@ body {
     outline: 0;
     padding: 15px 30px;
     border: 0;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 11px;
     text-align: center;
     text-transform: uppercase;
@@ -38,60 +38,77 @@ body {
 }
 
 .alt-button {
-    background: rgba(205, 214, 219, 0.0);;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 10px;
-    outline: 0;
-    padding: 15px 30px;
+    background: rgba(205, 214, 219, 0.0);
     border: 1px solid #FFFFFF;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 11px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 20px 20px 20px 0px;
 }
-.header-navigation {
+
+.nav {
     list-style: none;
     display: flex;
 }
 
-.header-nav-item {
+
+.nav-item {
     margin: 20px;
 }
 
-.header-nav-item a {
+.apartment-nav{
+    margin-right: 20px;
+}
+
+.nav-item a {
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 11px;
     color: #FFFFFF;
     text-transform: uppercase;
+    padding: 2px;
+}
+
+.apartment-nav-item:first-child a {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.apartment-nav-item:not(:first-child) a {
+    color: grey;
 }
 
 .logo {
-    font-weight: 400;
-    font-size: 11px;
+    font-weight: 800;
+    font-size: 14px;
     text-transform: uppercase;
     color: #E3B873;
     margin-right: 20px;
 }
 
 .header-telephone {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 11px;
-    text-align: right;
     text-decoration-line: underline;
     color: #E3B873;
     margin: 20px;
     margin-right: 40px;
 }
 
+.section {
+    background-size: cover;
+    position: relative;
+}
+
+.section-div {
+    margin: 40px 20px;
+    align-self: center;
+}
+
 .section1 {
     background-image: url("../images/image1.jpg");
     height: 707px;
-    background-size: cover;
-    position: relative;
+}
+
+.section2 {
+    background-color: black;
+    height: 100%;
 }
 
 .section1-container {
@@ -110,7 +127,7 @@ body {
 }
 
 .title {
-    font-weight: 400;
+    font-weight: 800;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
@@ -118,11 +135,77 @@ body {
     margin-bottom: 20px;
 }
 
+.yellow-title {
+    color: #E3B873;
+    font-size: 27px;
+}
+
+.apartment-item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.p-project-desc {
+    font-size: 14px;
+}
+
 .subtitle {
     color: #FFFFFF;
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .wraper1 {
     margin: 200px 0px;
+}
+
+.apartment-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.apartment-info-item {
+    display: inline-block;
+    box-sizing: content-box;
+    flex-basis: 50%;
+}
+
+.desc-item {
+    color: white;
+    font-size: 14px;
+}
+
+.svg-navigation {
+    margin-top: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.svg-nav-item {
+    height: 100%;
+    width: auto;
+    fill: white;
+}
+
+.svg-circle {
+    width: 10px;
+    fill: grey;
+}
+
+.svg-choosen-circle {
+    fill: white;
+}
+
+.apartment-image {
+    height: 100%;
 }
