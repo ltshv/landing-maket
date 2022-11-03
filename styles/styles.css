@@ -126,9 +126,20 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px;
+}
+
 .title {
     font-weight: 800;
-    font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -137,29 +148,26 @@ body {
 
 .yellow-title {
     color: #E3B873;
-    font-size: 27px;
 }
 
-.apartment-item-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
 
 p {
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 400;
-}
-
-.p-project-desc {
     font-size: 14px;
 }
 
+
 .subtitle {
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 400;
     font-size: 16px;
+}
+
+.subtitle-small {
+    font-size: 14px;
 }
 
 .wraper1 {
@@ -178,28 +186,35 @@ p {
     flex-basis: 50%;
 }
 
-.desc-item {
-    color: white;
-    font-size: 14px;
+.svg-box {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: baseline;
 }
 
-.svg-navigation {
-    margin-top: 20px;
-    width: 30%;
+.svg-item {
+    width: auto;
+    height: auto;
+    fill: white;
     display: flex;
-    justify-content: space-around;
+    margin: 5px;
+}
+
+.svg-item:first-child {
+    margin-left: 0px;
+}
+
+.svg-item:last-child {
+    margin-right: 0px;
+}
+
+.svg-arrow {
     height: 40px;
 }
 
-.svg-nav-item {
-    height: 100%;
-    width: auto;
-    fill: white;
-}
-
 .svg-circle {
-    width: 10px;
     fill: grey;
+    width: 10px;
 }
 
 .svg-choosen-circle {
@@ -207,5 +222,7 @@ p {
 }
 
 .apartment-image {
-    height: 100%;
+    height: auto;
+    width: auto;
+    display: flex;
 }
