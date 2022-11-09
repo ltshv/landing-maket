@@ -172,7 +172,7 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 900;
     line-height: 53px;
     padding: 20px 0px;
@@ -198,7 +198,6 @@ h3{
 }
 
 .title {
-    color: #FFFFFF;
     margin-bottom: 10px;
     margin-top: 0px;
 }
@@ -207,7 +206,7 @@ h3{
     text-transform: uppercase;
 }
 
-.yellow-title {
+.yellow-text {
     color: #E3B873;
 }
 
@@ -228,12 +227,25 @@ p {
     font-weight: 400;
 }
 
-.white-subtitle {
+
+.subtitle-small {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.subtitle-big {
+    font-size: 22px;
+}
+
+.white-text {
     color: white;
 }
 
-.black-subtitle{
+.black-text {
     color: black;
+}
+
+.section-subtitle{
     font-size: 18px;
     margin: 20px 20px;
     width: 681px;
@@ -241,9 +253,11 @@ p {
     line-height: 37px;
 }
 
-.subtitle-small {
-    font-size: 13px;
-    line-height: 21px;
+.form-subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    display: inline-flex;
+    width: 297px;
 }
 
 .apartment-info {
@@ -267,7 +281,7 @@ p {
 
 .svg-title-box {
     justify-content: center;
-    margin: -10px 0px;
+    margin: 0px;
 }
 
 .svg-item {
@@ -275,7 +289,7 @@ p {
     height: auto;
     fill: white;
     display: flex;
-    margin: 20px 5px;
+    margin: 0px 5px;
 }
 
 .svg-item:first-child {
@@ -358,11 +372,20 @@ p {
 }
 /* form */
 
-.request-link-form-div {
+.form-div {
     display: flex;
-    margin: 30px 100px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
+
+.request-link-form {
+    align-items: center;
+    text-align: center;
+}
+
+.request-link-form-div {
+    margin: 30px 100px;
+}
+
 
 .form-item {
     display: grid;
@@ -384,22 +407,36 @@ p {
     align-items: center;
     height: 55px;
     width: 200px;
+    margin: 0px;
 }
 
 .form-input {
     height: 30px;
     border: 0px;
-    border-bottom: 1px solid black;
     font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.00);
 }
 
-.form-input::placeholder {
+.white-input {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);;
+}
+
+.black-input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.white-input::placeholder {
     color: black;
+}
+
+.black-input::placeholder {
+    color: white;
 }
 
 .form-label {
     color: gray;
     font-size: 13px;
+    width: inherit;
 }
 
 
@@ -413,6 +450,7 @@ p {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    font-size: 14px;
 }
 
 .custom-checkbox+label::before {
@@ -490,4 +528,61 @@ p {
 
 .repair-div {
     display: inline-flex;
+    margin-top: 20px;
+}
+
+.measure-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 360px;
+}
+
+.measure-list-item:last-child {
+    margin-bottom: 0px;
+}
+
+.measure-list-number {
+    background-color: #E3B873;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 100px;
+    margin-right: 17px;
+}
+
+.measure-request-form {
+    background-color: black;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px 45px;
+}
+
+.measure-form-item {
+    width: 408px;
+    margin-bottom: 40px;
+}
+
+.measure-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.measure-column {
+    background-image: url(../images/measure-background.jpg);
+    background-position: left 500px;
+    padding: 0px 50px;
+}
+
+.request-measure-form-div {
+    display: grid;
+    justify-items: flex-end;
+    margin-top: 40px;
+}
+
+.measure-form-checkbox {
+    display: flex;
+    color: white;
+    width: 100%;
+
 }
