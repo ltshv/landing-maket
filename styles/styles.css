@@ -28,7 +28,7 @@ body {
 
 .button {
     background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     border-radius: 10px;
     outline: 0;
     padding: 15px 30px;
@@ -131,10 +131,13 @@ body {
 
 .section3 {
     display: flex;
-    align-items: center;
     text-align: center;
     justify-content: center;
     margin-top: -350px;
+}
+
+.section4 {
+    height: 800px;
 }
 
 .section1-container {
@@ -144,6 +147,8 @@ body {
 
 .wraper1 {
     align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .section-column {
@@ -170,22 +175,26 @@ h1 {
     font-size: 32px;
     font-weight: 900;
     line-height: 53px;
-    text-transform: uppercase;
     padding: 20px 0px;
 }
 
 h2 {
     font-size: 27px;
     font-weight: 800;
-    text-transform: uppercase;
     padding: 15px 0px;
+    line-height: 37px;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    text-transform: uppercase;
     padding: 10px 0px;
+    line-height: 25px;
+}
+
+.big-h3-title {
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .title {
@@ -194,13 +203,19 @@ h3{
     margin-top: 0px;
 }
 
+.upper-title {
+    text-transform: uppercase;
+}
+
 .yellow-title {
     color: #E3B873;
 }
 
+.black-title {
+    color: black;
+}
 
 p {
-    color: #FFFFFF;
     margin: 15px 0px;
     font-weight: 300;
     font-size: 14px;
@@ -208,10 +223,13 @@ p {
 
 
 .subtitle {
-    color: #FFFFFF;
     margin-bottom: 15px;
     font-size: 14px;
     font-weight: 400;
+}
+
+.white-subtitle {
+    color: white;
 }
 
 .black-subtitle{
@@ -225,6 +243,7 @@ p {
 
 .subtitle-small {
     font-size: 13px;
+    line-height: 21px;
 }
 
 .apartment-info {
@@ -297,6 +316,7 @@ p {
     height: 482px;
     width: auto;
     display: flex;
+    border-radius: 25px;
 }
 
 .video-thumbnail-div {
@@ -306,10 +326,12 @@ p {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 }
 
 .video-thumbnail-img {
     opacity: 60%;
+    border-radius: 25px;
 }
 
 .play-button {
@@ -353,6 +375,7 @@ p {
 
 .form-item:last-child {
     margin-right: 0px;
+    justify-content: center;
 }
 
 .form-button {
@@ -360,7 +383,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 55px;
-    width: 100%;
+    width: 200px;
 }
 
 .form-input {
@@ -411,4 +434,60 @@ p {
     border-color: #E3B873;
     background-color: #E3B873;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.repair-desc-box {
+    width: 330px;
+    height: 286px;
+    margin-top: -100px;
+    background-color: white;
+    position: relative;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 25px;
+}
+
+.repair-ul {
+    text-align: start;
+    font-size: 13px;
+    color: #959595;
+    line-height: 27px;
+    padding: 0px;
+    margin-left: 34px;
+    margin-top: 0px;
+}
+
+.repair-ul-title {
+    text-align: start;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    margin-bottom: 0px;
+    margin-left: 34px;
+}
+
+.repair-image{
+    border-radius: 25px;
+    z-index: -1;
+    position: relative;
+}
+
+.button-div {
+    padding: 0px;
+    margin-top: -27px;
+    z-index: 1;
+    position: absolute;
+}
+
+.repair-button {
+    line-height: 24px;
+    display: flex;
+    margin: 0px;
+    width: 228px;
+    height: 54px;
+    font-size: 18px;
+    justify-content: center;
+    padding: 17px 16px;
+}
+
+.repair-div {
+    display: inline-flex;
 }
