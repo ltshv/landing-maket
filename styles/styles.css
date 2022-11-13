@@ -179,7 +179,7 @@ body {
 }
 
 .section6 {
-    height: 500px;
+    height: 864px;
     background-image: url("../images/apartment-types-background.jpg");
 }
 
@@ -204,7 +204,7 @@ body {
     display: block;
 }
 
-.section1-overlay {
+.section-overlay {
     content: "";
     position: absolute;
     top: 0;
@@ -212,6 +212,10 @@ body {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hard-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -228,10 +232,9 @@ h2 {
     font-family: 'Yeseva One';
     font-size: 27px;
     font-weight: 800;
-    padding: 15px 0px;
     line-height: 37px;
-    margin-bottom: 10px;
-    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h3{
@@ -786,4 +789,63 @@ p {
     border-radius: 100px;
     border: 15px solid #E3B873;
     margin-right: 25px;
+}
+
+.apartment-types-images-div {
+    display: flex;
+}
+
+.apartment-type-img { 
+    margin: 40px 0px;
+    margin-right: 0px;
+    margin-left: 100px;
+    border-radius: 25px;
+}
+
+.apartment-type-img1 {
+    position: absolute;
+    top: -80px;
+}
+
+.apartment-type-img2 {
+    position: absolute;
+    bottom: -80px;
+}
+
+.apartment-type-img3 {
+    position: absolute;
+    top: -160px;
+    right: 0;
+}
+
+.apartment-type-img4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.apartments-types-column {
+    margin: 0px;
+}
+
+.apartments-types-div {
+    height: 100%;
+}
+
+.apartment-list-div {
+    width: 411px;
+}
+
+.apartment-type-list {
+    margin-top: 40px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.apartment-type-list li {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 20px;
 }
