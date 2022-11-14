@@ -142,14 +142,15 @@ body {
 }
 
 .section-div {
-    align-self: center;
     display: inline-flex;
+    width: 100%;
 }
 
-/*.apartment-div {
-    height: 500px;
-    width: auto;
-}*/
+.column-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .section1 {
     background-image: url("../images/image1.jpg");
@@ -273,6 +274,10 @@ h3{
 
 .yellow-text {
     color: #E3B873;
+}
+
+.title {
+    font-family: 'Yeseva One';
 }
 
 .black-title {
@@ -429,6 +434,7 @@ p {
     fill: white;
     display: flex;
     margin: 0px 5px;
+    position: relative;
 }
 
 .white-svg {
@@ -582,7 +588,6 @@ p {
 }
 
 .form-button {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 55px;
@@ -754,14 +759,14 @@ p {
     margin-right: 15px;
 }
 
-.measure-request-form {
+.black-form {
     background-color: black;
     border-radius: 25px;
     text-align: center;
     padding: 30px 45px;
 }
 
-.measure-form-item {
+.black-form-item {
     width: 408px;
     margin-bottom: 40px;
 }
@@ -788,7 +793,7 @@ p {
     margin-top: 40px;
 }
 
-.measure-form-checkbox {
+.black-form-checkbox {
     display: flex;
     color: white;
     width: 100%;
@@ -901,7 +906,8 @@ p {
 }
 
 .section7 h3 {
-    margin-top: 80px;
+    margin-bottom: 45px;
+    padding: 0px;
 }
 
 .client-info {
@@ -921,4 +927,80 @@ p {
     max-width: 76px;
     border-radius: 50px;
     margin-right: 23px;
+}
+
+.section7-container {
+    margin-top: 110px;
+}
+
+.section8 .black-form {
+    padding: 35px 180px;
+    display: inline-block;
+    margin-top: -225px;
+}
+
+.section8 .black-form .big-h3-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.section8 .form-item {
+    margin-right: 58px;
+    margin-bottom: 48px;
+}
+
+.section8 .black-form-item {
+    width: 100%;
+}
+
+.section8 .form-item:last-child {
+    justify-content: initial;
+    margin-right: 0px;
+
+}
+
+.section8 .black-form-checkbox {
+    display: block;
+}
+
+.section8 {
+    background-image: url(../images/building.jpg);
+    max-height: 954px;
+}
+.section8-container {
+    text-align: center;
+}
+
+.contacts-div {
+    display: block;
+}
+
+.section8 .title {
+    text-align: center;
+}
+
+.section8 .big-h3-title {
+    margin-top: 52px;
+    margin-bottom: 26px;
+}
+
+.contact-button {
+    padding: 8px;
+    margin: 0px 8px;
+    border-radius: 50px;
+}
+
+.contacts-svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.contacts-maps {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    background-color: black;
 }
