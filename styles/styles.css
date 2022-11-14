@@ -38,7 +38,7 @@ body {
 
 
 .button {
-    font-family: 'Yeseva One';
+    font-family: 'Nunito Sans';
     background: #E3B873;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     border-radius: 10px;
@@ -177,6 +177,8 @@ body {
     background-image: url(../images/measure-background.jpg);
     background-repeat: no-repeat;
     margin-bottom: 200px;
+    background-position: left 5px bottom -30px;
+    background-size: contain;
 }
 
 .section6 {
@@ -711,7 +713,8 @@ p {
     margin-bottom: -27px;
 }
 
-.three-column-box-button {
+.three-column-orange-box {
+    font-family: 'Yeseva One';
     display: flex;
     margin: 0px;
     min-width: fit-content;
@@ -875,6 +878,11 @@ p {
     line-height: 38px;
     margin-bottom: 20px;
     width: fit-content;
+}
+
+.apartment-type-list li a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .section7-container .three-column-box {
