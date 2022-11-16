@@ -284,6 +284,10 @@ h3{
     color: black;
 }
 
+.projects-subtitle {
+    width: 70%;
+}
+
 p {
     margin: 15px 0px;
     font-weight: 300;
@@ -330,9 +334,14 @@ p {
 }
 
 @media all and (max-width: 600px) {
+    .section2 {
+        height: 710px;
+    }
 
     .section3 {
         background-color: black;
+        margin: 0px;
+        height: 820px;
     }
 
     h1 {
@@ -372,6 +381,12 @@ p {
         color: white;
         width: 100%;
         line-height: 18.5px;
+        padding: 0px;
+    }
+
+    .projects-subtitle {
+        text-align: center;
+        width: 100%;
     }
 
     .button {
@@ -400,6 +415,8 @@ p {
 
     .section-column {
         margin: 0px;
+        display: grid;
+        justify-content: center;
     }
 }
 
@@ -414,6 +431,11 @@ p {
     box-sizing: content-box;
     flex-basis: 50%;
     margin-bottom: 20px;
+}
+
+.apartment-div {
+    display: block;
+    width: 50%;
 }
 
 .svg-box {
@@ -451,7 +473,17 @@ p {
 
 .svg-arrow {
     height: 40px;
+    width: 40px;
     z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.svg-arrow-left {
+    background-image: url(../images/arrow-left.svg);
+}
+
+.svg-arrow-right {
+    background-image: url(../images/arrow-right.svg);
 }
 
 .svg-circle {
@@ -479,12 +511,6 @@ p {
     justify-content: center;
 }
 
-.apartment-image {
-    height: 482px;
-    width: auto;
-    display: flex;
-    border-radius: 25px;
-}
 
 .video-thumbnail-div {
     margin: 20px 0px;
@@ -514,10 +540,25 @@ p {
     border: 20px solid #E3B873;
 }
 
+.apartment-image {
+    position: absolute;
+    right: 85px;
+    top: 0;
+    margin-top: 150px;
+    display: flex;
+    border-radius: 25px;
+}
+
 @media all and (max-width: 600px) {
+
+    .apartment-div {
+        width: 100%;
+    }
 
     .apartment-info { 
         text-align: center;
+        position: absolute;
+        bottom: 40px;
     }
 
     .apartment-info-item {
@@ -526,8 +567,19 @@ p {
     }
 
     .apartment-image {
-        width: 100%;
         height: auto;
+        width: 100%;
+        position: inherit;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin: 0px;
+    }
+
+    .apartment-image-column {
+        position: relative;
+        margin-top: 70px;
     }
 
     .video-thumbnail-img {
@@ -542,6 +594,39 @@ p {
         width: 30px;
         height: 30px;
         margin: 2px 0px;
+    }
+
+    .section2 .svg-circle {
+        display: none;
+    }
+
+    .section2 .svg-box {
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .svg-arrow {
+        background-color: #E3B873;
+        border: 5px solid #E3B873;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .svg-arrow-left {
+        background-image: url(../images/arrow-left-mobile.svg);
+        background-position: left 3px bottom 0px;
+        margin-left: 15px;
+        left: 15px;
+    }
+
+    .svg-arrow-right {
+        background-image: url(../images/arrow-right-mobile.svg);
+        background-position: right 4px bottom 0px;
+        right: 15px;
     }
 }
 
@@ -659,12 +744,9 @@ p {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-@media all and (max-width: 600px) {
-
-    .form-div {
-        display: grid;
-    }
-    
+.three-column-div {
+    display: grid;
+    justify-items: center;
 }
 
 .three-column-div:first-child {
@@ -676,7 +758,7 @@ p {
 }
 
 .three-column-box {
-    max-width: 330px;
+    min-width: 330px;
     min-height: 286px;
     margin-top: -100px;
     background-color: white;
@@ -728,6 +810,7 @@ p {
     justify-content: center;
     padding: 17px 16px;
     margin-right: 1px;
+    align-items: center;
 }
 
 .repair-div {
@@ -820,6 +903,8 @@ p {
 .section6 h2 {
     width: 350px;
 }
+
+
 .apartment-types-images-div {
     display: flex;
 }
@@ -1000,13 +1085,227 @@ p {
     margin-top: 40px;
     margin-bottom: 100px;
     border-radius: 25px;
+    width: 100%;
+    height: 400px;
 }
 
 .contacts-maps iframe{
     border-radius: 25px;
     border: 0;
+    width: 100% !important;
+    height: 100%;
 }
 
 .footer {
     background-color: black;
+}
+
+@media all and (max-width: 600px) {
+
+    .form-div {
+        display: grid;
+        margin: 0px;
+        margin-top: 60px;
+    }
+
+    .form-item {
+        display: grid;
+        text-align: justify;
+        align-content: center;
+        margin: 0px;
+        width: 340px;
+        margin-bottom: 60px;
+    }
+
+    .section3 .form-item {
+        margin-bottom: 0px;
+    }
+
+    .section3 .form-item:first-child {
+        margin-bottom: 60px;
+    }
+
+    .form-input {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        font-size: 14px;
+        height: 25px;
+    }
+    
+    .form-input::placeholder {
+        color: white;
+    }
+
+    .form-button {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 100%;
+    }
+
+    .form-checkbox {
+        justify-content: start;
+        margin-top: -20px;
+    }
+
+    .custom-checkbox+label {
+        color: white;
+    }
+
+    .section4 {
+        height: auto;
+    }
+
+    .section4 .big-h3-title {
+        margin-top: 72px;
+        margin-bottom: 15px;
+    }
+
+    .section-div {
+        display: block;
+    }
+
+    .repair-div {
+        display: block;
+    }
+
+    .three-column-box {
+        min-width: 270px;
+        min-height: 241px;
+    }
+
+    .three-column-orange-box {
+        width: 190px;
+        font-size: 15px;
+        height: 40px;
+        padding: 11px 19px;
+    }
+
+    .three-column-box-title {
+        padding: 21px 0px 10px;
+        margin-left: 31px;
+    }
+
+    .three-column-desc {
+        margin-left: 31px;
+        line-height: 22px;
+    }
+
+    .three-column-div {
+        justify-items: start;
+        margin-bottom: 80px;
+    }
+
+    .section5 {
+        display: none;
+    }
+    
+    .apartment-type-list {
+        display: none;
+    }
+
+    .section6 {
+        background-image: none;
+        height: auto;
+        margin-bottom: -121px;
+    }
+
+    .section6 .section-overlay {
+        display: none;
+    }
+
+    .apartment-type-img {
+        position: inherit;
+        height: 242px;
+        float: left;
+        margin: 0px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .apartment-type-img:not(:first-child) {
+        display: none;
+    }
+
+    .apartments-types-column {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .section7 {
+        display: none;
+    }
+
+    .section8 .section-overlay {
+        display: none;
+    }
+
+    .section8 {
+        background-color: black;
+        background-image: none;
+        max-height: none;
+        padding-top: 171px;
+    }
+
+    .section8 .black-form {
+        margin: 0;
+        padding: 0;
+        display: initial;
+        width: 340px;
+    }
+
+    .section8 .black-form .column-div {
+        display: block;
+    }
+
+    .section8 .black-form .big-h3-title {
+        margin-bottom: 50px;
+    }
+    
+    .section8 .form-button {
+        position: inherit;
+        margin-top: 30px;
+    }
+
+    .section8 .black-form-checkbox {
+        display: flex;
+    }
+
+    .section8 .big-h3-title {
+        order: 3;
+        margin-top: 0px;
+    }
+
+    .contacts-buttons {
+        order: 4;
+        margin: 25px 0px
+    }
+
+    .section8 .contacts-maps {
+        order: 2;
+        height: 270px;
+        margin: 50px 0px;
+    }
+
+    .section8 .contacts-div {
+        display: grid;
+    }
+
+    .section8 .contact-button {
+        width: 39px;
+        height: 39px;
+    }
+
+    .section8 .contacts-svg-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .section8 .svg-item:first-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
