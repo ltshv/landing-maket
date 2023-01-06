@@ -434,7 +434,7 @@ p {
 }
 
 .apartment-div {
-    display: block;
+    display: grid;
     width: 50%;
 }
 
@@ -553,6 +553,10 @@ p {
 
     .apartment-div {
         width: 100%;
+        grid-template-areas:
+            "slider"
+            "list";
+        display: grid;
     }
 
     .apartment-info { 
@@ -602,11 +606,11 @@ p {
 
     .section2 .svg-box {
         justify-content: space-between;
-        position: absolute;
         width: 100%;
         height: 100%;
         margin: 0px;
     }
+
 
     .svg-arrow {
         background-color: #E3B873;
