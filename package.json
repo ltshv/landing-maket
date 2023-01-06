@@ -6,5 +6,8 @@
   "repository": "-y",
   "author": "-y",
   "license": "-y",
-  "private": null
+  "private": null,
+  "dependencies": {
+    "package": "^1.0.1"
+  }
 }
