@@ -5,9 +5,14 @@
   "main": "-y",
   "repository": "-y",
   "author": "-y",
-  "license": "-y",
+  "license": "UNLICENSED",
   "private": null,
   "dependencies": {
+    "browser-sync": "^2.27.11",
+    "jquery": "^3.6.3",
     "package": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
