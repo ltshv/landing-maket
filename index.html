@@ -41,38 +41,41 @@
         </section>
         <section class="section section2">
             <div class="container">
-                <ul class="nav apartment-nav">
-                    <li class="nav-item apartment-nav-item"><a href="#">Rostov-on-Don, Admiral</a></li>
-                    <li class="nav-item apartment-nav-item"><a href="#">Sochi Thieves</a></li>
-                    <li class="nav-item apartment-nav-item"><a href="#">Rostov-on-Don Patriotic</a></li>
-                </ul>
-                <div class="section-div apartment-div">
-                        <h2 class="title yellow-text upper-title section-title">Completed projects</h2>
-                        <p class="subtitle white-text projects-subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                <div class="section-div apartment-div" id="apartment-div">
+                        <div class="apartment-h-desc">
+                            <h2 class="title yellow-text upper-title section-title section2-title">Completed projects</h2>
+                            <p class="subtitle white-text projects-subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                        </div>
                         <div class="apartment-info">
                             <div class="apartment-info-item">
                                 <h3 class="title yellow-text upper-title">City:</h3>
-                                <span class="subtitle subtitle-small white-text">Rostov-on-Don LCD admiral</span>
+                                <span class="subtitle subtitle-small white-text city-info">Rostov-on-Don LCD admiral</span>
                             </div>
                             <div class="apartment-info-item">
                                 <h3 class="title yellow-text upper-title">apartment area:</h3>
-                                <span class="subtitle subtitle-small white-text">81 m2</span>
+                                <span class="subtitle subtitle-small white-text area-info">81 m2</span>
                             </div>
                             <div class="apartment-info-item">
                                 <h3 class="title yellow-text upper-title">Repair time:</h3>
-                                <span class="subtitle subtitle-small white-text">3.5 months</span>
+                                <span class="subtitle subtitle-small white-text repear-time-info">3.5 months</span>
                             </div>
                             <div class="apartment-info-item">
                                 <h3 class="title yellow-text upper-title">Repair Cost:</h3>
-                                <span class="subtitle subtitle-small white-text">Upon request</span>
+                                <span class="subtitle subtitle-small white-text repear-cost-info">Upon request</span>
                             </div>
                         </div>
-                        <div class="svg-box svg-nav-box">
-                            <div class="svg-item svg-arrow svg-arrow-left"></div>
-                            <img class="svg-item svg-circle svg-choosen-circle" src="./images/pin-white.svg"/><img class="svg-item svg-circle" src="./images/pin-grey.svg"/><img class="svg-item svg-circle" src="./images/pin-grey.svg"/>
-                            <div class="svg-item svg-arrow svg-arrow-right"></div>
+                        <div class="svg-box svg-nav-box apartment-nav-arrows">
+                            <button class="apartment-nav-button apartment-prev-button"><div class="svg-item svg-arrow svg-arrow-left"></div></button>
+                        <div class="slider-dots"></div>
+                            <button class="apartment-nav-button apartment-next-button"><div class="svg-item svg-arrow svg-arrow-right"></div></button>
                         </div>
-                        <img src="./images/apartment-image.png" class="apartment-image">
+                        <div class="apartment-nav-div">
+                            <ul class="nav apartment-nav">
+                            </ul>
+                        </div>
+                        <div class="apartment-images">
+                            
+                        </div>                        
                     </div>
                     
                 </div>
@@ -382,6 +385,7 @@
                 <button class="button header-button">Request a call</button>
             </div>
         </footer>
+        <script src='scripts/slider.js'></script>
     </main>
 </body>
 </html>

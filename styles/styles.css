@@ -68,10 +68,13 @@ body {
     padding: 0px;
 }
 
-.apartment-nav{
-    margin: 0px 20px;
-    justify-content: end;
-    padding: 80px 0px 20px 0px;
+.apartment-nav-div {
+  padding-left: 0px;
+  align-self: center;
+}
+
+.apartment-nav {
+  padding-left: 0px;
 }
 
 .nav-item a {
@@ -88,10 +91,10 @@ body {
     font-size: 14px;
 }
 
-.apartment-nav-item:first-child a {
+/* .apartment-nav-item:first-child a {
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
-}
+} */
 
 .apartment-nav-item:not(:first-child) a {
     color: grey;
@@ -433,11 +436,6 @@ p {
     margin-bottom: 20px;
 }
 
-.apartment-div {
-    display: grid;
-    width: 50%;
-}
-
 .svg-box {
     margin: 20px 0px;
     display: flex;
@@ -486,10 +484,10 @@ p {
     background-image: url(../images/arrow-right.svg);
 }
 
-.svg-circle {
+/* .svg-circle {
     fill: grey;
     width: 10px;
-}
+} */
 
 .svg-choosen-circle path{
     fill: white;
@@ -541,12 +539,18 @@ p {
 }
 
 .apartment-image {
-    position: absolute;
-    right: 85px;
-    top: 0;
-    margin-top: 150px;
-    display: flex;
-    border-radius: 25px;
+  display: flex;
+  border-radius: 25px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 800ms ease;
+  position: absolute;
+  width: 100%;
+}
+
+.apartment-images .active {
+  opacity: 1;
 }
 
 @media all and (max-width: 600px) {
@@ -561,7 +565,6 @@ p {
 
     .apartment-info { 
         text-align: center;
-        position: absolute;
         bottom: 40px;
     }
 
@@ -573,7 +576,6 @@ p {
     .apartment-image {
         height: auto;
         width: 100%;
-        position: inherit;
         top: auto;
         bottom: auto;
         left: auto;
@@ -1322,4 +1324,140 @@ p {
         margin-right: auto;
     }
 
+}
+
+#apartment-div {
+    display: grid;
+    /*width: 50%;*/
+    grid-template-areas: 
+        "empty nav-text"
+        "title-desc nav-img"
+        "parameters nav-img"
+        "nav-arrows nav-img";
+    grid-template-rows: 150px 200px 200px 80px;
+}
+
+#apartment-div > .apartment-h-desc {
+    grid-area: title-desc;
+}
+
+#apartment-div > .apartment-info {
+    grid-area: parameters;
+  
+}
+
+#apartment-div > .apartment-nav-arrows {
+    grid-area: nav-arrows;
+}
+
+#apartment-div > .apartment-nav-div {
+    grid-area: nav-text;
+}
+
+#apartment-div > .apartment-images {
+    grid-area: nav-img;
+    background-position: center center;
+    position: relative;
+}
+
+.section2-title {
+  margin-top: 0px;
+}
+
+.apartment-nav-button {
+  background-color: initial;
+  border: 0;
+}
+
+.svg-circle svg {
+  width: 10px;
+  height: 10px;
+}
+
+.svg-circle svg circle{
+  fill: grey;
+}
+
+.svg-choosen-circle svg circle{
+  fill: white;
+}
+
+.slider-dots {
+  display: flex;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+}
+
+.slider__dots-item {
+  width: 10px;
+  height: 10px;
+  background: grey;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.slider__dots-item:hover, .slider__dots-item.active {
+  background: white;
+}
+
+.apartment-nav-item {
+  color: #fff4;;
+  font-family: 'Yeseva One';
+}
+
+.apartment-nav-item:hover, .apartment-nav-button:hover {
+  cursor: pointer;
+}
+
+.apartment-nav-div .active {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+
+@media all and (max-width: 600px) {
+  
+  .slider-dots{
+    display: none;
+  }
+  
+  #apartment-div {
+    display: grid;
+    /*width: 50%;*/
+    grid-template-areas: 
+      "title"
+      "apartment-images"
+      "parameters";
+    grid-template-rows: 200px 240px 200px;
+  }
+  
+  #apartment-div > .apartment-h-desc {
+    grid-area: title;
+    margin-top: 50px;
+  }
+  
+  #apartment-div > .apartment-info {
+    grid-area: parameters;
+    margin-top: 50px;
+  }
+  
+  #apartment-div > .apartment-nav-arrows {
+    grid-area: apartment-images;
+  }
+  
+  #apartment-div > .apartment-nav-div {
+    grid-area: nav-text;
+  }
+  
+  #apartment-div > .apartment-images {
+    grid-area: apartment-images;
+  }
 }
